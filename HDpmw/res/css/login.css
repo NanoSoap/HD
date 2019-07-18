@@ -1,0 +1,177 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+/** �������߾� **/
+body, h1, h2, h3, h4, h5, h6, hr, p,
+blockquote, /* structural elements �ṹԪ�� */
+dl, dt, dd, ul, ol, li, /* list elements �б�Ԫ�� */
+pre, /* text formatting elements �ı���ʽԪ�� */
+form, fieldset, legend, button, input, textarea, /* form elements ���Ԫ�� */
+img /* img elements ͼƬԪ�� */ {
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+/** ����Ĭ������ **/
+body, button, input, select, textarea {
+    font-size: 14px;
+    font-family: "΢���ź�";
+    color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-size: 100%;
+}
+
+em {
+    font-style: normal;
+}
+/** �����б�Ԫ�� **/
+ul, ol {
+    list-style: none;
+}
+/** ���ó�����Ԫ�� **/
+a {
+    text-decoration: none;
+    color: #231815;
+}
+
+    a:focus {
+        outline: none;
+    }
+
+    a:hover {
+        text-decoration: none;
+    }
+/** ����ͼƬԪ�� **/
+img {
+    border: 0px;
+}
+/** ���ñ��Ԫ�� **/
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/** ҳ������ʽ **/
+.fn_clear:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0
+}
+
+.fn_clear {
+    zoom: 1;
+}
+
+.fn_hide {
+    display: none;
+}
+
+.fn_show {
+    display: block;
+}
+
+.fn_left, .fn_right {
+    display: inline
+}
+
+.fn_left {
+    float: left;
+}
+
+.fn_right {
+    float: right
+}
+
+/** ��¼������ʽ **/
+.w1080 {
+    width: 1080px;
+    margin: 0 auto;
+}
+
+.xk_bg {
+    background: url(../../images/xk_bg.jpg) #f00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    z-index: -10;
+    zoom: 1;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+.xk_logo img {
+    display: block;
+    margin: 5% auto 0;
+}
+
+.xk_log {
+    margin: 8% auto 0;
+}
+
+.xk_log_l img {
+    display: block;
+}
+
+.xk_log_r {
+    width: 378px;  
+    height: 366px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 10px 20px;
+    margin: 3% 0 0 0;
+    box-shadow: 0 0 5px #959595;
+}
+
+.xk_log_r h1 {   
+    font-size: 26px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+    font-weight: normal;
+}
+
+ .xk_log_r input{
+    width: 98%;
+    height: 45px;
+    line-height: 45px;
+    border: 1px solid #ccc;
+    color: #666666;
+    border-radius: 4px;
+    margin: 4% auto 0;
+    padding: 0 0 0 10px;
+    float: left;
+    font-size:15px;
+}
+
+.xk_log_r input.yzm {
+    width: 52%;
+}
+
+.xk_log_r div {
+    }
+
+.xk_log_r div img {
+float: right;
+margin: 4% 0 0 0;
+vertical-align:middle;
+}
+
+.loginbtn {
+    background: url('../../images/login_22.png') no-repeat 0px 0px;
+    width: 378px;
+    height: 50px;
+    display: block;
+    border: none;
+}

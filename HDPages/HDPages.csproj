@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8EB60BF6-36A8-4653-82AE-ADF58E1BF474}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HDPages</RootNamespace>
+    <AssemblyName>HDPages</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel">
+      <HintPath>C:\Users\ASUS\Desktop\Microsoft.Office.Interop.Excel\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="baseInfoLib\bi_heatdevice.cs" />
+    <Compile Include="baseInfoLib\bi_heatdevice_repair.cs" />
+    <Compile Include="baseLib\baseBusiness.cs" />
+    <Compile Include="baseLib\systemMenu.cs" />
+    <Compile Include="baseLib\systemMenu_button.cs" />
+    <Compile Include="baseLib\userLogin.cs" />
+    <Compile Include="baseLib\userMenu.cs" />
+    <Compile Include="baseLib\xparams.cs" />
+    <Compile Include="code\commonLib.cs" />
+    <Compile Include="code\createsql.cs" />
+    <Compile Include="code\dbsql.CS" />
+    <Compile Include="code\excel.cs" />
+    <Compile Include="code\verificationCode.cs" />
+    <Compile Include="craftLib\cd_integration.cs" />
+    <Compile Include="craftLib\cd_integration_batch.cs" />
+    <Compile Include="craftLib\cd_integration_batch_step.cs" />
+    <Compile Include="craftLib\cd_mechanical.cs" />
+    <Compile Include="craftLib\cd_mechanical_batch.cs" />
+    <Compile Include="craftLib\cd_mechanical_batch_step.cs" />
+    <Compile Include="craftLib\cd_thermal.cs" />
+    <Compile Include="craftLib\cd_thermal_batch.cs" />
+    <Compile Include="craftLib\cd_thermal_indicator.cs" />
+    <Compile Include="planningLib\pp_contract.cs" />
+    <Compile Include="planningLib\pp_contract_content.cs" />
+    <Compile Include="planningLib\pp_producitionorder.cs" />
+    <Compile Include="planningLib\pp_producitionorder_content.cs" />
+    <Compile Include="productLib\pd_3d.cs" />
+    <Compile Include="productLib\pd_blueprint.cs" />
+    <Compile Include="productLib\pd_cad.cs" />
+    <Compile Include="productLib\pd_compongall.cs" />
+    <Compile Include="productLib\pd_compongall_compose.cs" />
+    <Compile Include="productLib\pd_kidclass_main.cs" />
+    <Compile Include="productLib\pd_kidclass_mainmpic.cs" />
+    <Compile Include="productLib\pd_kidclass_secondary.cs" />
+    <Compile Include="productLib\pd_kidclass_secondrec.cs" />
+    <Compile Include="productLib\pd_machinekit.cs" />
+    <Compile Include="productLib\pd_machinekit_feature.cs" />
+    <Compile Include="productLib\pd_outbuykit.cs" />
+    <Compile Include="productLib\pd_photo.cs" />
+    <Compile Include="productLib\pd_product.cs" />
+    <Compile Include="productLib\pd_product_compose.cs" />
+    <Compile Include="productLib\pd_standardkit.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="code\sqlgroup\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
